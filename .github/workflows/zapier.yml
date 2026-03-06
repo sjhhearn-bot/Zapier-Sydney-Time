@@ -1,0 +1,10 @@
+name: Trigger Sydney Time Update
+on:
+  schedule:
+    - cron: '*/1 * * * *'  # Every minute
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Zapier Webhook
+        run: curl -X POST https://hooks.zapier.com/hooks/catch/26028612/uxbbhxf/
