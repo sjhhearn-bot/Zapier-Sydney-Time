@@ -1,7 +1,7 @@
 name: Trigger Sydney Time Update
 on:
   schedule:
-    - cron: */1 * * * *
+    - cron: '*/1 * * * *'
 jobs:
   trigger:
     runs-on: ubuntu-latest
